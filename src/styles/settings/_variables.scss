@@ -1,0 +1,52 @@
+//  Fonts
+//  ───────────────────────────────────
+
+// Font Sizes
+$font-size : (
+  x-small  : 12px, 
+  small    : 14px,
+  base     : 16px,
+  medium   : 18px,
+  large    : 24px,
+);
+
+//  Fonts Weight
+$font-weight : (
+  light      : 300,
+  normal     : 400,
+  medium     : 500,
+  bold       : 600,
+);
+
+//  Breackpoints
+//  ───────────────────────────────────
+
+$breakpoints: (
+  "phone":        480px,
+  "tablet":       768px,
+  "desktop":      1200px,
+);
+
+//  Base
+//  ───────────────────────────────────
+
+$font-family-base : 'Roboto', sans-serif;
+$font-size-base   : map-get($font-size, base);
+$line-height-base : 1.4;
+$font-weight-base : map-get($font-weight, normal);
+$color-base       : $color-gray-4;
+$color-link       : $color-gray-6;
+
+
+//  Navbar
+//  ───────────────────────────────────
+
+$navbar-height  : 70px;
+
+//  Buttons
+//  ───────────────────────────────────
+
+$button-padding : .7em 2.4em;
+$button-color : $color-white;
+$button-font-size : 14px; // Use px
+$button-border-radius : 4px; // Round

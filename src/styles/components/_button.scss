@@ -1,0 +1,32 @@
+//  Buttons
+//  ───────────────────────────────────
+
+.button {  
+	display: inline-block;
+	padding: $button-padding;
+	color: $button-color;
+	text-align: center;
+	font-weight: 500;
+	cursor: pointer;
+	font-size: $button-font-size;
+	white-space: nowrap;
+	user-select: none;
+	border: none;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;
+	text-rendering: auto;
+  border-radius: $button-border-radius;
+}
+
+// Primary
+.button-primary {
+	background-color: $color-primary;
+	&.button--plain {
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+}
