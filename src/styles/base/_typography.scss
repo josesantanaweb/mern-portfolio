@@ -1,0 +1,36 @@
+//  Typography
+//  ───────────────────────────────────
+
+// Titles
+.title {
+  font-size: map-get($font-size, xxxlarge);
+  font-weight: map-get($font-weight, black);
+  color: $color-title;
+  margin: 0;
+  span {
+    font-weight: map-get($font-weight, normal);
+  }
+}
+
+// Texts
+.text {
+  color: $color-text;
+  font-size: map-get($font-size, small);
+  line-height: 1.8;
+}
+
+// Subtitles
+.subtitle {
+  color: $color-text;
+  font-size: map-get($font-size, base);
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background: $color-secondary;
+    margin: 0 10px;
+  }
+}

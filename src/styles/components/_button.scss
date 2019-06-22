@@ -16,7 +16,8 @@
 	word-spacing: normal;
 	vertical-align: top;
 	text-rendering: auto;
-  border-radius: $button-border-radius;
+	border-radius: $button-border-radius;
+	box-shadow: 0px 5px 30px 0px rgba(0, 40, 243, 0.1);
 }
 
 // Primary

@@ -31,12 +31,14 @@
   // Navbar Brand
   &-brand {
     @include flexbox();
+    flex: 1;
   }
-
+  
   // Navbar Menu
   &-menu {
     @include flexbox();
     @include align-items(center);
+    flex: 1;
   }
 
   // Navbar Item

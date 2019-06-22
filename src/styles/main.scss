@@ -14,10 +14,11 @@
 @import 'base/fonts';
 @import 'base/reset';
 @import 'base/base';
+@import 'base/typography';
 
 // Components
 @import 'components/button';
-@import 'components/typography';
+@import 'components/menu';
 
 // Utilities
 @import 'utilities/space';
@@ -27,4 +28,3 @@
 
 // Layout
 @import 'layouts/container';
-@import 'layouts/menu';

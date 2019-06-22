@@ -1,11 +1,11 @@
 
 // Intro
 .intro {
-  background-repeat: no-repeat;
-  background-position: 241% 62%;
   width: 100%;
   height: 100vh;
   z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   @include position(relative, top -80px);
   .container {
     @include flexbox();  
@@ -22,10 +22,12 @@
   @include flexbox(); 
   @include align-items(center); 
   transform: rotate(-90deg);
+  color: $color-title;
+  z-index: 3;
   &:after {
     content: '';
     @include position(absolute, top 8px right -50px);
-    background: --color-gray-4;
+    background: $color-text;
     width: 40px;
     height: 1px;
   } 
@@ -35,13 +37,13 @@
     @include position(absolute, left 120px);
     @include flexbox(); 
     @include justify-content(space-between); 
-    width: 100px;
+    width: 120px;
     a {
       transform: rotate(90deg);
-      color: --color-gray-4;
+      color: $color-text;
       font-size: map-get($font-size, base);
       &:hover {
-        color: --color-primary;
+        color: $color-primary;
       }
     }
   }
@@ -50,9 +52,96 @@
 // About
 .about {
   padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  &:before {
+    content: '';
+    @include position(absolute, top 0px left -30px);
+    width: 500px;
+    height: 100%;
+    background-image: url(https://i.ibb.co/GdrYRDY/about.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  &:after {
+    content: '';
+    @include position(absolute, top 0px right -100px);
+    width: 350px;
+    height: 490px;
+    background-image: url(https://i.ibb.co/V2sf7Xg/about-path-2.png);
+    background-repeat: no-repeat;
+  }
   .container {
     @include flexbox();  
     @include justify-content(center); 
     @include align-items(center);
-  }   
+  } 
+
+  // Caption
+  &-caption {
+    width: 40%;
+  }  
+}
+
+// Services
+.services {
+  padding: 50px 0;
+  .container {
+    @include flexbox();  
+    @include justify-content(space-between); 
+    @include align-items(center);
+  }
+
+  // Caption
+  &-caption {
+    flex: 1;
+    padding-right: 200px;
+  }
+
+  // Items
+  &-items {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-gap: 25px;
+  }
+
+  // Card
+  &-card {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: $color-white;
+    box-shadow: 0px 5px 30px 0px rgba(0, 40, 243, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    font-size: map-get($font-size, small);
+    &:nth-child(even) {
+      top: 130px;
+    }
+  }
+
+  &-icon {
+    font-size: map-get($font-size, xxxlarge);
+    color: $color-primary;
+  }
+
+  &-name {
+    margin: 10px 0;
+    font-weight: map-get($font-weight, bold);
+    color: $color-title;
+  }
+
+  &-description {
+    margin-bottom: 20px;
+  }
+
+  &-learn {
+    color: $color-secondary;
+  }
 }

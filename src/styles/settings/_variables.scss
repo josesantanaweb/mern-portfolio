@@ -8,6 +8,9 @@ $font-size : (
   base     : 16px,
   medium   : 18px,
   large    : 24px,
+  xlarge   : 28px,
+  xxlarge  : 34px,
+  xxxlarge : 38px,
 );
 
 //  Fonts Weight
@@ -16,6 +19,7 @@ $font-weight : (
   normal     : 400,
   medium     : 500,
   bold       : 600,
+  black      : 900,
 );
 
 //  Breackpoints
