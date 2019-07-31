@@ -31,3 +31,15 @@
     }
   }
 }
+
+// Secondary
+.button-secondary {
+	background-color: $color-secondary;
+	&.button--plain {
+    color: $color-secondary;
+    border: 1px solid $color-secondary;
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+}

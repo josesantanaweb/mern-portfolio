@@ -19,9 +19,12 @@
 // Components
 @import 'components/button';
 @import 'components/menu';
+@import 'components/footer';
 
 // Utilities
+@import 'utilities/colors';
 @import 'utilities/space';
+@import 'utilities/fonts';
 
 // Pages
 @import 'pages/home';

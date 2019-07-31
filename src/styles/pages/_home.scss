@@ -4,14 +4,22 @@
   width: 100%;
   height: 100vh;
   z-index: 1;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  overflow: hidden;
   @include position(relative, top -80px);
+  overflow: hidden;
+  &-bg {
+    background-repeat: no-repeat;
+    background-position: 130% 70%;
+    width: 100%;
+    height: 100vh;
+  }
   .container {
     @include flexbox();  
     @include justify-content(space-between); 
     @include align-items(center);
     height: 100%;
+    position: relative;
+    z-index: 2;
   } 
 }
 
@@ -51,36 +59,37 @@
 
 // About
 .about {
-  padding: 50px 0;
+  padding: 100px 0;
+  margin: 50px 0;
   position: relative;
   overflow: hidden;
-  height: 500px;
-  &:before {
-    content: '';
-    @include position(absolute, top 0px left -30px);
-    width: 500px;
-    height: 100%;
-    background-image: url(https://i.ibb.co/GdrYRDY/about.png);
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
+  // background: #f9f9f9;
   &:after {
     content: '';
-    @include position(absolute, top 0px right -100px);
-    width: 350px;
-    height: 490px;
-    background-image: url(https://i.ibb.co/V2sf7Xg/about-path-2.png);
+    top: 70px;
+    left: -120px;
+    position: absolute;
+    width: 170px;
+    height: 300px;
+    background-image: url(https://i.ibb.co/1qFcZn5/path.png);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   .container {
     @include flexbox();  
-    @include justify-content(center); 
+    @include justify-content(space-between); 
     @include align-items(center);
   } 
 
   // Caption
   &-caption {
-    width: 40%;
+    flex: 1;
+    margin-right: 100px;
+  }  
+
+  // Caption
+  &-image {
+    flex: 1;
   }  
 }
 
@@ -110,10 +119,10 @@
   // Card
   &-card {
     min-height: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox();  
+    @include flex-direction(column); 
+    @include align-items(center);
+    @include justify-content(center);
     text-align: center;
     background: $color-white;
     box-shadow: 0px 5px 30px 0px rgba(0, 40, 243, 0.1);
@@ -143,5 +152,124 @@
 
   &-learn {
     color: $color-secondary;
+  }
+}
+
+// Portfolio
+.portfolio {
+  padding: 100px 0;
+  
+  // Caption
+  &-caption {
+    @include flexbox();  
+    @include flex-direction(column); 
+    margin: auto;
+    width: 30%;
+  }
+  
+  // Category
+  &-category {
+    @include flexbox();  
+    @include justify-content(center); 
+    margin-bottom: 20px;
+    li {
+      display: block;
+      padding: 20px;
+      cursor: pointer;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  
+  // Gallery
+  &-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 20px;
+    a {
+      min-height: 250px;
+      display: block;
+      overflow: hidden;
+      &:hover {
+        img {
+          transform: scale(1.1);
+          transition: all .2s;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+      }
+      &:first-child { // First of list
+        grid-row: span 2 / auto;
+      }
+      &:nth-child(6) { // Child 6 of list
+        img {
+          height: 280px;
+        }
+      }
+    }
+  }
+}
+
+// Reviews
+.reviews {
+  padding: 50px 0;
+  position: relative;
+  &:after {
+    content: '';
+    @include position(absolute, top 0px left -100px);
+    width: 350px;
+    height: 600px;
+    background-image: url(https://i.ibb.co/1qFcZn5/path.png);
+    background-repeat: no-repeat;
+  }
+  .container {
+    @include flexbox();  
+    @include justify-content(space-between); 
+    @include align-items(center);
+  }
+
+  &-start {
+    color: #ED8A19;
+    font-size: 16px;
+    margin-bottom: 10px;
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  &-caption {
+    flex: 1;
+    padding-left: 150px;
+  }
+
+  &-users {
+    flex: 1;
+    @include flexbox();  
+    @include justify-content(flex-end); 
+  }
+}
+
+// Tegnologies
+.tegnologies {
+  padding: 50px 0;
+  position: relative;
+  height: 500px;
+  .container {
+    @include flexbox();  
+    @include justify-content(space-between); 
+    @include align-items(center);
+  }
+
+  &-items {
+    position: relative;
+    flex: 1;
+  }
+
+  &-caption {
+    flex: 1;
   }
 }

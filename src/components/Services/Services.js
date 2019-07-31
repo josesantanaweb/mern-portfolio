@@ -52,7 +52,7 @@ function Services() {
             <p className="subtitle">Services</p>
             <h3 className="title mb-2"><span>My Features & </span>Services</h3>
             <p className="text">Lorem ipsum dolor sit amet consectetur adipiscing elit, at maecenas mus sapien torquent elementum ac litora, volutpat dapibus habitasse ridiculus hac est.</p>
-            <a href="/" className="button button-primary mt-3">Contact</a>
+            <a href="/" className="button button-secondary mt-3">Contact</a>
           </div>
           <div className="services-items">
             { servicesList }
