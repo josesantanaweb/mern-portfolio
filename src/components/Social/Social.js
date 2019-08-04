@@ -7,10 +7,10 @@ const Social = () => {
   return (
     <React.Fragment>
       <div className="social">
-        <span>Follow Us</span>
+        <span>Sígueme</span>
         <div className="social-list">
           {socialData.map(social => (
-            <a href={social.name} key={social.id}>
+            <a href={social.link} key={social.id}>
               <i className={`fa fa-${social.name}`}></i>
             </a>
           ))}

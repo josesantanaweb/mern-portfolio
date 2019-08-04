@@ -15,7 +15,7 @@
 // Texts
 .text {
   color: $color-text;
-  font-size: map-get($font-size, small);
+  font-size: map-get($font-size, base);
   line-height: 1.8;
 }
 

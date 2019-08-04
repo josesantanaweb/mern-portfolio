@@ -16,7 +16,10 @@ function NavBar() {
             </div>
             <nav className="navbar-menu">
               <Link to="/home" className="navbar-item">Home</Link>
-              <Link to="/about" className="navbar-item">About Us</Link>
+              <Link to="/about" className="navbar-item">Sobre Mi</Link>
+              <Link to="/about" className="navbar-item">Servicios</Link>
+              <Link to="/about" className="navbar-item">Portafolio</Link>
+              <Link to="/about" className="navbar-item">Contacto</Link>
             </nav>
           </div>
         </div>

@@ -9,17 +9,17 @@ const categoriesData = [
   },
   { 
     id: 2, 
-    name: "Mobile App",
+    name: "Aplicaciones Moviles",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." 
   },
   { 
     id: 3, 
-    name: "Design",
+    name: "Diseño",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." 
   },
   { 
     id: 4, 
-    name: "Brand",
+    name: "Iconos",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." 
   },
 ];
@@ -66,7 +66,7 @@ const worksData = [
     idCategory: 1,
     name: "Pack Icons",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." ,
-    image: "https://via.placeholder.com/150C"
+    image: "https://i.ibb.co/m94gWww/herbaplant.png"
   },
   { 
     id: 7, 
@@ -107,8 +107,8 @@ function Portfolio() {
       <section className="portfolio">
         <div className="container">
           <div className="portfolio-caption">
-            <p className="subtitle">Portfolio</p>
-            <h3 className="title mb-2"><span>Latest </span>Works</h3>
+            <p className="subtitle">Portafolio</p>
+            <h3 className="title mb-2"><span>Ultimos </span>Trabajos</h3>
           </div>
           <div className="portfolio-category">
             <li>All</li>

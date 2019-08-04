@@ -31,14 +31,12 @@
   // Navbar Brand
   &-brand {
     @include flexbox();
-    flex: 1;
   }
   
   // Navbar Menu
   &-menu {
     @include flexbox();
     @include align-items(center);
-    flex: 1;
   }
 
   // Navbar Item
@@ -47,8 +45,8 @@
     text-decoration: none;
     display: block;
     line-height: $navbar-height + 10;
-    font-size: map-get($font-size, small); 
-    padding: 0 20px;
+    font-size: map-get($font-size, base); 
+    padding: 0 25px;
     position: relative;
     &:after {
       content: '';

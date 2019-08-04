@@ -10,19 +10,19 @@ const servicesData = [
   },
   { 
     id: 2, 
-    name: "Web Development",
+    name: "Desarrollo Web",
     icon: "fa-terminal",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit, at maecenas mus sapien torquent." 
+    description: "Lorem ipsum dolor sit amet torquent." 
   },
   { 
     id: 3, 
-    name: "Mobile App",  
+    name: "Aplicaciones Moviles",  
     icon: "fa-mobile",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit, at maecenas mus sapien torquent." 
   },
   { 
     id: 4, 
-    name: "Web Design", 
+    name: "Diseño Web", 
     icon: "fa-file-image-o",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit, at maecenas mus sapien torquent." 
   }
@@ -37,7 +37,7 @@ let servicesList = servicesData.map((service) => {
       </div>
       <h4 className="services-name">{ service.name }</h4>
       <p className="services-description">{ service.description }</p>
-      <a href="/services" className="services-learn">Learn More</a>
+      <a href="/services" className="services-learn">Leer Mas</a>
     </div>
   )
 })
@@ -49,10 +49,10 @@ function Services() {
       <section className="services">
         <div className="container">
           <div className="services-caption">
-            <p className="subtitle">Services</p>
-            <h3 className="title mb-2"><span>My Features & </span>Services</h3>
+            <p className="subtitle">Servicios</p>
+            <h3 className="title mb-2"><span>Mis Habilidades & </span>Servicios</h3>
             <p className="text">Lorem ipsum dolor sit amet consectetur adipiscing elit, at maecenas mus sapien torquent elementum ac litora, volutpat dapibus habitasse ridiculus hac est.</p>
-            <a href="/" className="button button-secondary mt-3">Contact</a>
+            <a href="/" className="button button-secondary mt-3">Contacto</a>
           </div>
           <div className="services-items">
             { servicesList }

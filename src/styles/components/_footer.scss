@@ -4,6 +4,7 @@
   position: relative;
   padding-top: 180px;
   font-size: 14px;
+  color: $color-white;
   &:after {
     content: '';
     position: absolute;
@@ -25,14 +26,15 @@
 
   h4 {
     color: $color-secondary;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 16px;
   }
-
+  
   ul {
     flex: 1;
     li {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
     }
   }
 }

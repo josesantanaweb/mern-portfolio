@@ -4,10 +4,10 @@ export const PortfolioContext = createContext();
 
 export const PortfolioProvider = props => {
   const [socialData] = useState([
-    { id: 1, name: 'facebook'  },
-    { id: 2, name: 'twitter'   },
-    { id: 3, name: 'github'    },
-    { id: 4, name: 'instagram' }
+    { id: 1, name: 'facebook', link: 'https://github.com/josesantanaweb' },
+    { id: 2, name: 'twitter', link: 'https://github.com/josesantanaweb' },
+    { id: 3, name: 'github', link: 'https://github.com/josesantanaweb' },
+    { id: 4, name: 'instagram', link: 'https://github.com/josesantanaweb' }
   ])
 
   return (
