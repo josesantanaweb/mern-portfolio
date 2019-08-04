@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/mern-portfolio/precache-manifest.11917406f5dbe48481a3a595b14a8945.js"
+  "/mern-portfolio/precache-manifest.c993cd57ab77fc561f3f0603f6788fe5.js"
 );
 
 workbox.clientsClaim();
