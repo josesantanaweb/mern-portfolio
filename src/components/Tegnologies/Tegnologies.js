@@ -11,7 +11,7 @@ const Tegnologies = () => {
           <div className="tegnologies-caption">
             <p className="subtitle">Tecnologias</p>
             <h3 className="title mb-2">MERN <span>Stack</span></h3>
-            <p className="text mb-3">Lorem ipsum dolor sit amet consectetur adipiscing elit, at maecenas mus sapien torquent elementum ac litora, volutpat dapibus habitasse ridiculus hac est.</p>
+            <p className="text mb-3">Busco el equilibrio entre lo puntero y lo estable. Con lenguajes de programación como Javascript. Siempre con la ayuda de Frameworks como: NodeJS, React JS, Express y VueJS. Respecto a smartphones o móviles, creo Apps Híbridas con Vue-cli y Cordova/Phonegap o React Native</p>
             <a href="/" className="button button-secondary">Proyectos</a>
           </div>
         </div>

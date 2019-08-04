@@ -41,14 +41,14 @@
 // Social
 .social {
   font-size: map-get($font-size, x-small);
-  @include position(absolute, top 93%);
+  @include position(absolute, top 70% left 10%);
   @include flexbox(); 
   @include align-items(center); 
-  transform: rotate(-90deg);
   color: $color-title;
   z-index: 3;
   @include respond-to(desktop) {
-    @include position(absolute, top 60%);
+    transform: rotate(-90deg);
+    @include position(absolute, top 60% left 0);
   }
   &:after {
     content: '';
@@ -65,11 +65,13 @@
     @include justify-content(space-between); 
     width: 120px;
     a {
-      transform: rotate(90deg);
       color: $color-text;
       font-size: map-get($font-size, base);
       &:hover {
         color: $color-primary;
+      }
+      @include respond-to(desktop) {
+        transform: rotate(90deg);
       }
     }
   }
@@ -246,7 +248,6 @@
       @include respond-to(desktop) {
         padding: 20px;
         font-size: 16px;
-        padding: 100px 0;
       }
     }
   }
@@ -276,6 +277,7 @@
         width: 100%;
         height: 100%;
         transform: scale(1);
+        object-fit: cover;
       }
       &:first-child { // First of list
         grid-row: span 2 / auto;

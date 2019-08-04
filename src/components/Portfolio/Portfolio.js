@@ -31,56 +31,56 @@ const worksData = [
     idCategory: 1,
     name: "Pack Icons",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." ,
-    image: "https://i.ibb.co/t2LJkGJ/Motos.png"
+    image: "https://i.ibb.co/pvJrmFg/Home.jpg"
   },
   { 
     id: 2, 
     idCategory: 2,
     name: "Pack Icons",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." ,
-    image: "https://i.ibb.co/t2LJkGJ/Motos.png"
+    image: "https://i.ibb.co/JFKdWMx/app-overseas.jpg"
   },
   { 
     id: 3, 
     idCategory: 3,
     name: "Pack Icons",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." ,
-    image: "https://i.ibb.co/t2LJkGJ/Motos.png"
+    image: "https://i.ibb.co/ydMghMM/icons.png"
   },
   { 
     id: 4, 
     idCategory: 2,
     name: "Pack Icons",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." ,
-    image: "https://i.ibb.co/t2LJkGJ/Motos.png"
+    image: "https://i.ibb.co/qjgB5Lr/Login.png"
   },
   { 
     id: 5, 
     idCategory: 1,
     name: "Pack Icons",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." ,
-    image: "https://i.ibb.co/t2LJkGJ/Motos.png"
+    image: "https://i.ibb.co/1n14G62/App.png"
   },
   { 
     id: 6, 
     idCategory: 1,
     name: "Pack Icons",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." ,
-    image: "https://i.ibb.co/m94gWww/herbaplant.png"
+    image: "https://i.ibb.co/gtPZhnP/herbaplant.png"
   },
   { 
     id: 7, 
     idCategory: 1,
     name: "Pack Icons",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." ,
-    image: "https://i.ibb.co/DpgynDk/Cervezas.png"
+    image: "https://i.ibb.co/gSXT19b/Cervezas.jpg"
   },
   { 
     id: 8, 
     idCategory: 1,
     name: "Pack Icons",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit." ,
-    image: "https://i.ibb.co/t2LJkGJ/Motos.png"
+    image: "https://i.ibb.co/NL45j8Q/Motos.jpg"
   },
 ];
 
@@ -88,14 +88,14 @@ const worksData = [
 // Categories List
 let categoriesList = categoriesData.map((category) => {
   return (
-    <li>{ category.name }</li>
+    <li key={category.id}>{ category.name }</li>
   )
 })
 
 // Works List
 let worksList = worksData.map((work) => {
   return (
-    <a href="/">
+    <a href="/" key={work.id}>
       <img src={ work.image } alt={ work.name }/>
     </a>
   )

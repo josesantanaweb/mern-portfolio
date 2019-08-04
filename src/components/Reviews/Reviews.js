@@ -16,12 +16,12 @@ const Reviews = () => {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
             </div>
-            <p className="text mb-2">Lorem ipsum dolor sit amet consectetur adipiscing elit, at maecenas mus sapien torquent elementum ac litora, volutpat dapibus habitasse ridiculus hac est.</p>
+            <p className="text mb-2">Captaron mi idea a la primera y la plasmaron tal y como me lo imaginaba. El trato inmejorable, hicieron que el proceso fuera fácil y cómodo. Lo recomiendo!!</p>
             <h4 className="cl-title fw-medium mb-1">Javier Hernández</h4>
             <p className="">Ceo PubliWeb</p>
           </div>
           <div className="reviews-users">
-            <img src="https://i.ibb.co/pKJYwHq/Grupo-25.png" alt="users" />
+            <img src="https://i.ibb.co/LJ0HN45/Grupo-25.png" alt="users" />
           </div>
         </div>
       </section>

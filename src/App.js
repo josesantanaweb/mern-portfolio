@@ -1,28 +1,40 @@
-﻿import React, { Component } from "react";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
+﻿import React, { useEffect, useState } from 'react';
+import { MemoryRouter as Router, Route, Switch } from "react-router-dom";
 import "./styles/main.scss";
-import {PortfolioProvider} from './PorfolioContext';
-
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
+import About from "./pages/About/About";
+import Loading from "./components/Loading/Loading";
+
+import {PortfolioProvider} from './PorfolioContext';
 
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
 
-class App extends Component {
-  render() {
+
+function App(){
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 10000);
+  }, []);
+
+  if (loading) {
+    return <Loading  />;
+  } else {
     return (
       <PortfolioProvider>
-        <BrowserRouter>
+        <Router>
           <React.Fragment>
-            <NavBar />
-            <Switch>
-              <Route path = "/" component = { Home } />
-              <Route path = "/about" component = { About } />
-            </Switch>
-            <Footer />
+          <NavBar />
+          <Switch>
+            <Route path = "/"  exact component = { Home } />
+            <Route path = "/about" component = { About } />
+          </Switch>
+          <Footer />
           </React.Fragment>
-        </BrowserRouter>
+        </Router>
       </PortfolioProvider>
     );
   }

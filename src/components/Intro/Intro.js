@@ -11,7 +11,7 @@ function Intro() {
           <div className="intro-caption">
             <p className="subtitle">Hola</p>
             <h1 className="title"><span>Yo soy</span> Jose Santana!</h1>
-            <p className="text">Freelance Web & Mobile UI/UX Designer</p>
+            <p className="text">Freelance Web & Mobile UI/UX Designer, Responsive Web</p>
             <a href="/" className="button button-secondary mt-3">Sobre Mi</a>
           </div>
         </div>
