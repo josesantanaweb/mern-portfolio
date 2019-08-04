@@ -3,10 +3,13 @@
 
 // Titles
 .title {
-  font-size: map-get($font-size, xxxlarge);
+  font-size: map-get($font-size, xlarge);
   font-weight: map-get($font-weight, bold);
   color: $color-title;
   margin: 0;
+  @include respond-to(desktop) {
+    font-size: map-get($font-size, xxxlarge);
+  }
   span {
     font-weight: map-get($font-weight, normal);
   }

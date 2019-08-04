@@ -1,8 +1,11 @@
-﻿import React from "react";
+﻿import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png"
 
-function NavBar() {
+const NavBar = () => {
+
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <React.Fragment>
       <header className="header">
@@ -12,9 +15,9 @@ function NavBar() {
               <Link to="/" className="logo">
                 <img src={ logo } alt={ logo }></img>
               </Link>
-              <button className="navbar-toggle"></button>
+              <button className="navbar-toggle" onClick={() => setOpenMenu(!openMenu)}></button>
             </div>
-            <nav className="navbar-menu">
+            <nav className={ openMenu ? "navbar-menu open" : "navbar-menu" }>
               <Link to="/home" className="navbar-item">Home</Link>
               <Link to="/about" className="navbar-item">Sobre Mi</Link>
               <Link to="/about" className="navbar-item">Servicios</Link>
