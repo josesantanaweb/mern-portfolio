@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "551e3eb9d383b765d7e3",
-    "url": "/mern-portfolio/static/css/main.9a452202.chunk.css"
+    "revision": "9fba226931878bf228f7",
+    "url": "/mern-portfolio/static/css/main.8c9e3508.chunk.css"
   },
   {
-    "revision": "551e3eb9d383b765d7e3",
+    "revision": "9fba226931878bf228f7",
     "url": "/mern-portfolio/static/js/main.c92921d0.chunk.js"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/mern-portfolio/static/media/vector.671cbb77.svg"
   },
   {
-    "revision": "895a9d891c9c08cb5efcb980f22306e9",
+    "revision": "067a2aa1a664312694f6b64d4768df22",
     "url": "/mern-portfolio/index.html"
   }
 ];

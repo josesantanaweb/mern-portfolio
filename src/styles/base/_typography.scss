@@ -18,8 +18,11 @@
 // Texts
 .text {
   color: $color-text;
-  font-size: map-get($font-size, base);
+  font-size: map-get($font-size, small);
   line-height: 1.8;
+  @include respond-to(desktop) {
+    font-size: map-get($font-size, base);
+  }
 }
 
 // Subtitles

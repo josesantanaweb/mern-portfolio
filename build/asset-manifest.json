@@ -1,5 +1,5 @@
 {
-  "main.css": "/mern-portfolio/static/css/main.9a452202.chunk.css",
+  "main.css": "/mern-portfolio/static/css/main.8c9e3508.chunk.css",
   "main.js": "/mern-portfolio/static/js/main.c92921d0.chunk.js",
   "main.js.map": "/mern-portfolio/static/js/main.c92921d0.chunk.js.map",
   "runtime~main.js": "/mern-portfolio/static/js/runtime~main.fada4399.js",
@@ -7,8 +7,8 @@
   "static/js/2.1f3a8cc6.chunk.js": "/mern-portfolio/static/js/2.1f3a8cc6.chunk.js",
   "static/js/2.1f3a8cc6.chunk.js.map": "/mern-portfolio/static/js/2.1f3a8cc6.chunk.js.map",
   "index.html": "/mern-portfolio/index.html",
-  "precache-manifest.27a861410562cd6835578948aad0c0d1.js": "/mern-portfolio/precache-manifest.27a861410562cd6835578948aad0c0d1.js",
+  "precache-manifest.f00d9b9e2f06871453e860e76f1272bf.js": "/mern-portfolio/precache-manifest.f00d9b9e2f06871453e860e76f1272bf.js",
   "service-worker.js": "/mern-portfolio/service-worker.js",
-  "static/css/main.9a452202.chunk.css.map": "/mern-portfolio/static/css/main.9a452202.chunk.css.map",
+  "static/css/main.8c9e3508.chunk.css.map": "/mern-portfolio/static/css/main.8c9e3508.chunk.css.map",
   "static/media/vector.svg": "/mern-portfolio/static/media/vector.671cbb77.svg"
 }
